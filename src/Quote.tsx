@@ -1,11 +1,15 @@
 import React, { FC } from 'react';
 
-interface QuoteProps {
-  text: string;
-  author: string;
-}
+interface Quote {
+    text: string;
+    author: string;
+  }
+  
+  const quotes: Quote[] = [
+    { text: 'Quote 1', author: 'Author 1' },
+  ];
 
-const Quote: FC<QuoteProps> = ({ text, author }) => (
+const Quote: FC<Quote> = ({ text, author }) => (
   <div className="quote">
     <p>"{text}"</p>
     <p>- {author}</p>
