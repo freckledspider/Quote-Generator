@@ -6,5 +6,6 @@
  
 - HTML
 - CSS
+- JavaScript
 - TypeScript
 - React
