@@ -20,6 +20,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Random Quote Generator</h1>
+      </header>
+
+      <div className="App-body">
 
         {/* Checks if currentQuote is truth and renders the quote in the Quote component. */}
 
@@ -38,7 +41,7 @@ function App() {
         {/* onclick event */}
 
         <button onClick={handleRandomQuote}>Generate Random Quote</button>
-      </header>
+        </div>
     </div>
   );
 }
