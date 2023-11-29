@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { FC } from 'react';
 
 interface QuoteProps {
   text: string;
   author: string;
 }
 
-const Quote = ({ text, author }: QuoteProps) => (
+const Quote: FC<QuoteProps> = ({ text, author }) => (
   <div className="quote">
     <p>"{text}"</p>
     <p>- {author}</p>
